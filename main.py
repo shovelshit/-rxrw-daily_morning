@@ -1,5 +1,5 @@
 from wechatpy import WeChatClient
-from wechatpy.client.api import WeChatMessage
+from wechatpy.client.api import WeChatMessage, WeChatTemplate
 import os
 
 
