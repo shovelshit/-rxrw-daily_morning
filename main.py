@@ -1,13 +1,14 @@
 from wechatpy import WeChatClient
-from wechatpy.client.api import WeChatMessage
+from wechatpy.client.api import WeChatMessage, WeChatTemplate
+import os
 
 
 if __name__ == '__main__':
-    app_id = 'wx55df960f0cbfb4c8'
-    app_secret = 'cdc86c244b30515880b081240da066c3'
+    app_id = os.environ["APP_ID"]
+    app_secret = os.environ["APP_SECRET"]
 
-    user_id = 'oxFGf6YLSO75rd2wDJG4o3VKrxTk'
-    template_id = 'eu7AtjfedSGtIRED_k9NabiejmJBwv3Z7HW80lwajJU'
+    user_id = os.environ["USER_ID"]
+    template_id = os.environ["TEMPLATE_ID"]
 
     client = WeChatClient(app_id, app_secret)
 
